@@ -1,0 +1,14 @@
+{
+    "tasks": [
+        {
+            "type": "process",
+            "label": "CMake: build K-Means library, examples, and tests",
+            "command": "cmake",
+            "args": ["--build", "${workspaceFolder}/build", "--config", "Release", "--parallel", "4"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": ["$gcc"],
+            "group": {"kind": "build", "isDefault": true}
+        }
+    ],
+    "version": "2.0.0"
+}
